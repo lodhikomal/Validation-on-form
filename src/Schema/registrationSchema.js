@@ -27,4 +27,8 @@ export const schema = Yup.object({
     .required("field is required")
     .min(10)
     .nullable(),
+  checkbox: Yup.boolean().oneOf(
+    [true],
+    "Accept Terms & Conditions is required"
+  ),
 });

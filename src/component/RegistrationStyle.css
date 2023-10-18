@@ -53,6 +53,26 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+.form-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+  margin-top: 2px;
+  border: 0.7px solid #dde3ec;
+  border-radius: 3px;
+}
+.form-box {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: #536387;
+  margin-bottom: 20px;
+}
 
 /* Style the submit button */
 .submit-button {
@@ -68,6 +88,9 @@ h1 {
 /* Change submit button color on hover */
 .submit-button:hover {
   background-color: #45a049;
+}
+a {
+  color: #b784f1;
 }
 
 /* Optional: Style form validation messages */

@@ -15,6 +15,7 @@ const initialValues = {
   country: "",
   post: "",
   area: "",
+  checkbox: false,
 };
 
 function RegistrationForm() {
@@ -27,6 +28,7 @@ function RegistrationForm() {
         action.resetForm();
       },
     });
+  console.log(errors, "check");
   return (
     <div>
       <div className="form-container">
@@ -335,6 +337,24 @@ function RegistrationForm() {
               ) : null}
             </div>
           </div>
+          <div className="form-box">
+            <input
+              type="checkbox"
+              className="form-check"
+              name="checkbox"
+              checked={values.checkbox}
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+            I agreed To defined &nbsp;
+            <a href="/">terms, </a>&nbsp;
+            <a href="/">conditions</a>,and &nbsp;
+            <a href="/">policies</a>
+            <br></br>
+          </div>
+          {errors.checkbox && touched.checkbox ? (
+            <p className="error-message">{errors.checkbox}</p>
+          ) : null}
           <button className="submit-button" type="submit">
             Register Now
           </button>
