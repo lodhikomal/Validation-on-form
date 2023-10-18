@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #07074d;
+  font-family: "Inter", sans-serif;
+  /* background: antiquewhite; */
+}
+.svg {
+  width: 490;
+  height: 202;
+  fill: none;
+  margin-bottom: 45px;
+}
+/* Style the form container */
+.form-container {
+  margin: 0 auto;
+  max-width: 570px;
+  width: 100%;
+  /* background: white; */
+  padding: 40px;
+}
+h1 {
+  padding: 10px;
+}
+.para {
+  padding: 20px 0px;
+  color: rgb(94, 106, 170);
+}
+.form-field {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  grid-gap: 20px;
+}
+
+/* Style the form elements */
+.form-group {
+  margin-bottom: 10px;
+}
+
+/* Style form labels */
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  /* font-weight: bold; */
+}
+
+/* Style text input and textarea */
+.text-input,
+.textarea {
+  width: 70%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the submit button */
+.submit-button {
+  background-color: #6a64f1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Change submit button color on hover */
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Optional: Style form validation messages */
+.error-message {
+  color: #ff0000;
+  margin-top: 5px;
+  font-size: 10px;
+  border: red;
+}
+.error-border {
+  border-color: red;
+}
+
+.success-message {
+  color: #4caf50;
+  margin-top: 5px;
+  font-size: small;
+}
